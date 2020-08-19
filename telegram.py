@@ -12,7 +12,6 @@ with open('env.sh') as file:
     token = str(file.readline())
     chat_id=str(file.readline())
     command_api=str(file.readline())
-print (token)
 
 #url=str(os.environ[telegram_url])
 #token=str(os.environ[telegram_token])
@@ -31,11 +30,12 @@ text=str(argv[1])
 
 url=url+token+command_api
 url=url.replace("\n","")
-print(url)
 #====================================
 #send messages
 #====================================
+def message_telegram(chat_id, text):
+    json={"chat_id": chat_id, "text": text}
+    r=requests.post(url,json=json)
 
-json={"chat_id": chat_id, "text": text}
-r=requests.post(url,json=json)
+message_telegram(chat_id, text)
 
