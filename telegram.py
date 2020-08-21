@@ -13,10 +13,10 @@ from sys import argv
 ##    chat_id=str(file.readline())
 ##    command_api=str(file.readline())
 
-url=str(os.getenv(telegram_url))
-token=str(os.getenv(telegram_token))
-chat_id=str(os.getenv(telegram_chatid))
-command_api=str(os.getenv(telegram_command))
+url=str(os.getenv("telegram_url"))
+token=str(os.getenv("telegram_token"))
+chat_id=str(os.getenv("telegram_chatid"))
+command_api=str(os.getenv("telegram_command"))
 
 #====================================
 #set messages
