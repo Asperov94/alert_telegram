@@ -7,16 +7,16 @@ from sys import argv
 #set variables
 #====================================
 
-with open('env.sh') as file:
-    url = str(file.readline())
-    token = str(file.readline())
-    chat_id=str(file.readline())
-    command_api=str(file.readline())
+###with open('env.sh') as file:
+##    url = str(file.readline())
+##    token = str(file.readline())
+##    chat_id=str(file.readline())
+##    command_api=str(file.readline())
 
-#url=str(os.environ[telegram_url])
-#token=str(os.environ[telegram_token])
-#chat_id=str(os.environ[telegram_chatid])
-#command_api=str(os.environ[telegram_command])
+url=str(os.environ[telegram_url])
+token=str(os.environ[telegram_token])
+chat_id=str(os.environ[telegram_chatid])
+command_api=str(os.environ[telegram_command])
 
 #====================================
 #set messages
