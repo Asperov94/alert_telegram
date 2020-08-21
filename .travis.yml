@@ -7,4 +7,4 @@ script:
   - export telegram_token=$telegram_token
   - export telegram_chatid=$telegram_chatid
   - export telegram_command=$telegram_command
-  - python3 telegram.py
+  - python3 telegram.py "Travis CI test OK"
